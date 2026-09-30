@@ -7,4 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
-add_executable(LLM_Orchestrator src/main.cpp)
+add_executable(LLM_Orchestrator src/main.cpp
+        include/Types.hpp
+        include/IProvider.hpp)
