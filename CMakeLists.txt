@@ -7,6 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 include_directories(include)
 
+include_directories(include third_party)
+
 add_executable(LLM_Orchestrator src/main.cpp
         include/Types.hpp
-        include/IProvider.hpp)
+        include/IProvider.hpp
+        include/CloudProvider.hpp)
+
