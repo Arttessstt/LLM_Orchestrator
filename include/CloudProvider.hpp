@@ -8,7 +8,8 @@ namespace llm_providers {
     // Адаптер для облачных API (например, Groq или OpenAI)
     class CloudProvider : public llm_core::IProvider {
     public:
-        CloudProvider(const std::string& api_key, const std::string& base_url, const std::string& model);
+        
+        CloudProvider(const std::string& api_key, const std::string& base_url, const std::string& endpoint, const std::string& model);
         ~CloudProvider() override;
 
         llm_core::Response generate(const std::vector<llm_core::Message>& prompt,
