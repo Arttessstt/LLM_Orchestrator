@@ -1,0 +1,17 @@
+# CLion и JetBrains
+.idea/
+cmake-build-*/
+
+# Бинарники и сборка
+bin/
+build/
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+
+# Конфиденциальные данные (ключи API)
+.env
+config.local.json
